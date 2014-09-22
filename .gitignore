@@ -1,0 +1,10 @@
+# Zed
+.zedstate
+
+# Force .lib files
+!lib/**/*.lib
+
+# Ignore useless files
+*.dsn
+*.ses
+*.stf
