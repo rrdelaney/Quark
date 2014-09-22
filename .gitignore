@@ -1,0 +1,5 @@
+# Zed
+.zedstate
+
+# Force .lib files
+!lib/**/*.lib
