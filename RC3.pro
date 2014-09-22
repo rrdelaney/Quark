@@ -1,6 +1,6 @@
-update=9/2/2014 12:55:03 AM
+update=9/22/2014 12:00:39 AM
 version=1
-last_client=kicad
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=
@@ -21,6 +21,7 @@ DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
+LibDir=./lib
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -37,17 +38,18 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
-LibName17=C:/Users/Ryan/Dropbox/SolarCarClub/Projects/Tachyon/Electronics/RC3/RC3/LIB/terminals/borniers
-LibName18=C:/Users/Ryan/Dropbox/SolarCarClub/Projects/Tachyon/Electronics/RC3/RC3/LIB/transistor/Transistor_TO-220_RevB_03Sep2012/Transistor_TO-220_RevB_03Sep2012
-LibDir=
+LibName17=./terminals/borniers
+LibName18=./transistor/Transistor_TO-220_RevB_03Sep2012
 [cvpcb]
 version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=./lib
 NetFmtName=
 RptD_X=0
 RptD_Y=100
@@ -84,6 +86,4 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=C:/Users/Ryan/Dropbox/SolarCarClub/Projects/Tachyon/Electronics/RC3/REV
-[general]
-version=1
+LibName31=./REV
