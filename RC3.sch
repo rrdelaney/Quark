@@ -36,9 +36,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "RC3 BLDC Motor Controller"
-Date "25 sep 2014"
-Rev "1"
+Title "Quark Motor Controller"
+Date "16 nov 2014"
+Rev "2"
 Comp "Rensselaer Electric Vehicle"
 Comment1 ""
 Comment2 ""
@@ -261,17 +261,17 @@ F 3 "~" H 7750 4850 30  0000 C CNN
 	1    7750 4850
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8300 3900 2    60   Input ~ 0
+Text GLabel 9950 3900 2    60   Input ~ 0
 HALL_C
-Text GLabel 8300 4050 2    60   Input ~ 0
+Text GLabel 9950 4050 2    60   Input ~ 0
 HALL_B
-Text GLabel 8300 4200 2    60   Input ~ 0
+Text GLabel 9950 4200 2    60   Input ~ 0
 HALL_A
-Text GLabel 8300 4350 2    60   Input ~ 0
+Text GLabel 9950 4350 2    60   Input ~ 0
 ESTOPn
-Text GLabel 8300 4500 2    60   Input ~ 0
+Text GLabel 9950 4500 2    60   Input ~ 0
 DIREC
-Text GLabel 8300 4650 2    60   Input ~ 0
+Text GLabel 9950 4650 2    60   Input ~ 0
 PWM
 $Comp
 L C C9
@@ -702,6 +702,122 @@ F 3 "" H 2450 7150 60  0000 C CNN
 	1    2450 7150
 	1    0    0    -1  
 $EndComp
+Text GLabel 1700 3700 0    60   Input ~ 0
+OUT_C
+Text GLabel 1700 5150 0    60   Input ~ 0
+OUT_B
+Text GLabel 1700 6700 0    60   Input ~ 0
+OUT_A
+$Comp
+L C C10
+U 1 1 54249E17
+P 7500 5050
+F 0 "C10" H 7500 5150 40  0000 L CNN
+F 1 "1u" H 7506 4965 40  0000 L CNN
+F 2 "~" H 7538 4900 30  0000 C CNN
+F 3 "~" H 7500 5050 60  0000 C CNN
+	1    7500 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 54691A6E
+P 1900 4150
+F 0 "D1" H 1900 4250 40  0000 C CNN
+F 1 "DIODE" H 1900 4050 40  0000 C CNN
+F 2 "~" H 1900 4150 60  0000 C CNN
+F 3 "~" H 1900 4150 60  0000 C CNN
+	1    1900 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODE D2
+U 1 1 54691A7B
+P 1900 5600
+F 0 "D2" H 1900 5700 40  0000 C CNN
+F 1 "DIODE" H 1900 5500 40  0000 C CNN
+F 2 "~" H 1900 5600 60  0000 C CNN
+F 3 "~" H 1900 5600 60  0000 C CNN
+	1    1900 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODE D3
+U 1 1 54691A81
+P 1900 7200
+F 0 "D3" H 1900 7300 40  0000 C CNN
+F 1 "DIODE" H 1900 7100 40  0000 C CNN
+F 2 "~" H 1900 7200 60  0000 C CNN
+F 3 "~" H 1900 7200 60  0000 C CNN
+	1    1900 7200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R15
+U 1 1 546926F1
+P 8700 5050
+F 0 "R15" V 8780 5050 40  0000 C CNN
+F 1 "10K" V 8707 5051 40  0000 C CNN
+F 2 "~" V 8630 5050 30  0000 C CNN
+F 3 "~" H 8700 5050 30  0000 C CNN
+	1    8700 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 546926FE
+P 8900 5050
+F 0 "R16" V 8980 5050 40  0000 C CNN
+F 1 "10K" V 8907 5051 40  0000 C CNN
+F 2 "~" V 8830 5050 30  0000 C CNN
+F 3 "~" H 8900 5050 30  0000 C CNN
+	1    8900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 54692704
+P 9100 5050
+F 0 "R17" V 9180 5050 40  0000 C CNN
+F 1 "10K" V 9107 5051 40  0000 C CNN
+F 2 "~" V 9030 5050 30  0000 C CNN
+F 3 "~" H 9100 5050 30  0000 C CNN
+	1    9100 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R18
+U 1 1 5469270A
+P 9300 5050
+F 0 "R18" V 9380 5050 40  0000 C CNN
+F 1 "10K" V 9307 5051 40  0000 C CNN
+F 2 "~" V 9230 5050 30  0000 C CNN
+F 3 "~" H 9300 5050 30  0000 C CNN
+	1    9300 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 54692710
+P 9500 5050
+F 0 "R19" V 9580 5050 40  0000 C CNN
+F 1 "10K" V 9507 5051 40  0000 C CNN
+F 2 "~" V 9430 5050 30  0000 C CNN
+F 3 "~" H 9500 5050 30  0000 C CNN
+	1    9500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 54692716
+P 9700 5050
+F 0 "R20" V 9780 5050 40  0000 C CNN
+F 1 "10K" V 9707 5051 40  0000 C CNN
+F 2 "~" V 9630 5050 30  0000 C CNN
+F 3 "~" H 9700 5050 30  0000 C CNN
+	1    9700 5050
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	1050 750  1050 950 
 Wire Wire Line
@@ -740,14 +856,6 @@ Wire Wire Line
 	4150 1350 4150 1300
 Connection ~ 4150 1350
 Connection ~ 3750 1350
-Wire Bus Line
-	850  600  8950 600 
-Wire Bus Line
-	850  1700 8950 1700
-Wire Bus Line
-	850  1700 850  600 
-Wire Bus Line
-	1700 1700 1750 1700
 Wire Wire Line
 	7050 1100 7100 1100
 Wire Wire Line
@@ -776,10 +884,6 @@ Wire Wire Line
 	6200 1300 6200 1400
 Wire Wire Line
 	6200 1400 5900 1400
-Wire Bus Line
-	5350 600  5350 1700
-Wire Bus Line
-	8050 1700 8050 600 
 Wire Wire Line
 	2900 1000 2850 1000
 Wire Wire Line
@@ -792,14 +896,6 @@ Wire Wire Line
 	2850 1200 2850 1300
 Wire Wire Line
 	2850 1300 2500 1300
-Wire Bus Line
-	3500 600  3500 1700
-Wire Bus Line
-	3500 1700 3550 1700
-Wire Bus Line
-	1800 600  1800 1700
-Wire Bus Line
-	1800 1700 1850 1700
 Wire Wire Line
 	7150 3650 7200 3650
 Wire Wire Line
@@ -829,13 +925,13 @@ Connection ~ 8000 3850
 Wire Wire Line
 	7150 3950 8150 3950
 Wire Wire Line
-	7150 4050 8300 4050
+	7150 4050 9950 4050
 Wire Wire Line
 	7150 4150 8150 4150
 Wire Wire Line
 	8150 4150 8150 4200
 Wire Wire Line
-	8150 4200 8300 4200
+	8150 4200 9950 4200
 Wire Wire Line
 	8150 3950 8150 3900
 Wire Wire Line
@@ -843,25 +939,25 @@ Wire Wire Line
 Wire Wire Line
 	8000 4850 8100 4850
 Wire Wire Line
-	8150 3900 8300 3900
+	8150 3900 9950 3900
 Wire Wire Line
 	7150 4250 8150 4250
 Wire Wire Line
 	8150 4250 8150 4350
 Wire Wire Line
-	8150 4350 8300 4350
+	8150 4350 9950 4350
 Wire Wire Line
 	7150 4350 8100 4350
 Wire Wire Line
 	8100 4350 8100 4500
 Wire Wire Line
-	8100 4500 8300 4500
+	8100 4500 9950 4500
 Wire Wire Line
 	7150 4450 8050 4450
 Wire Wire Line
 	8050 4450 8050 4650
 Wire Wire Line
-	8050 4650 8300 4650
+	8050 4650 9950 4650
 Wire Wire Line
 	7150 4650 7950 4650
 Wire Wire Line
@@ -1260,23 +1356,6 @@ Wire Wire Line
 Connection ~ 2200 4500
 Connection ~ 2200 3050
 Connection ~ 2450 5900
-Text GLabel 1700 3700 0    60   Input ~ 0
-OUT_C
-Text GLabel 1700 5150 0    60   Input ~ 0
-OUT_B
-Text GLabel 1700 6700 0    60   Input ~ 0
-OUT_A
-$Comp
-L C C10
-U 1 1 54249E17
-P 7500 5050
-F 0 "C10" H 7500 5150 40  0000 L CNN
-F 1 "1u" H 7506 4965 40  0000 L CNN
-F 2 "~" H 7538 4900 30  0000 C CNN
-F 3 "~" H 7500 5050 60  0000 C CNN
-	1    7500 5050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7150 5050 7300 5050
 Wire Wire Line
@@ -1289,4 +1368,144 @@ Wire Wire Line
 	7400 5200 8100 5200
 Wire Wire Line
 	8100 5200 8100 4850
+Wire Wire Line
+	1900 5150 1900 5400
+Connection ~ 1900 5150
+Wire Wire Line
+	1900 5800 1900 6150
+Wire Wire Line
+	1900 6150 2450 6150
+Connection ~ 2450 6150
+Wire Wire Line
+	1900 7000 1900 6700
+Connection ~ 1900 6700
+Wire Wire Line
+	2200 7450 2200 6950
+Wire Wire Line
+	2200 6950 2450 6950
+Connection ~ 2450 6950
+Wire Wire Line
+	1900 3700 1900 3950
+Connection ~ 1900 3700
+Wire Wire Line
+	1900 4350 1900 4650
+Wire Wire Line
+	1900 4650 2450 4650
+Connection ~ 2450 4650
+Wire Wire Line
+	8700 4800 8700 3900
+Connection ~ 8700 3900
+Wire Wire Line
+	8900 4800 8900 4050
+Connection ~ 8900 4050
+Wire Wire Line
+	9100 4800 9100 4200
+Connection ~ 9100 4200
+Wire Wire Line
+	9300 4800 9300 4350
+Connection ~ 9300 4350
+Wire Wire Line
+	9500 4800 9500 4500
+Connection ~ 9500 4500
+Wire Wire Line
+	9700 4800 9700 4650
+Connection ~ 9700 4650
+Wire Wire Line
+	7850 5550 9700 5550
+Wire Wire Line
+	9700 5550 9700 5300
+Connection ~ 7850 5550
+Wire Wire Line
+	9500 5300 9500 5550
+Connection ~ 9500 5550
+Wire Wire Line
+	9300 5300 9300 5550
+Connection ~ 9300 5550
+Wire Wire Line
+	9100 5300 9100 5550
+Connection ~ 9100 5550
+Wire Wire Line
+	8900 5300 8900 5550
+Connection ~ 8900 5550
+Wire Wire Line
+	8700 5300 8700 5550
+Connection ~ 8700 5550
+$Comp
+L +5V #PWR012
+U 1 1 54694406
+P 9150 750
+F 0 "#PWR012" H 9150 840 20  0001 C CNN
+F 1 "+5V" H 9150 840 30  0000 C CNN
+F 2 "" H 9150 750 60  0000 C CNN
+F 3 "" H 9150 750 60  0000 C CNN
+	1    9150 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 5469440E
+P 9150 1100
+F 0 "C11" H 9150 1200 40  0000 L CNN
+F 1 "1u" H 9156 1015 40  0000 L CNN
+F 2 "~" H 9188 950 30  0000 C CNN
+F 3 "~" H 9150 1100 60  0000 C CNN
+	1    9150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 5469441B
+P 9450 1100
+F 0 "C12" H 9450 1200 40  0000 L CNN
+F 1 "47n" H 9456 1015 40  0000 L CNN
+F 2 "~" H 9488 950 30  0000 C CNN
+F 3 "~" H 9450 1100 60  0000 C CNN
+	1    9450 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 54694421
+P 9150 1500
+F 0 "#PWR013" H 9150 1500 30  0001 C CNN
+F 1 "GND" H 9150 1430 30  0001 C CNN
+F 2 "" H 9150 1500 60  0000 C CNN
+F 3 "" H 9150 1500 60  0000 C CNN
+	1    9150 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 900  9150 750 
+Wire Wire Line
+	9150 850  9450 850 
+Wire Wire Line
+	9450 850  9450 900 
+Connection ~ 9150 850 
+Wire Wire Line
+	9150 1300 9150 1500
+Wire Wire Line
+	9150 1350 9450 1350
+Wire Wire Line
+	9450 1350 9450 1300
+Connection ~ 9150 1350
+Wire Notes Line
+	850  1700 9700 1700
+Wire Notes Line
+	9700 1700 9700 600 
+Wire Notes Line
+	9700 600  850  600 
+Wire Notes Line
+	8000 600  8000 1700
+Wire Notes Line
+	5350 600  5350 1700
+Wire Notes Line
+	3450 600  3450 1700
+Wire Notes Line
+	1850 600  1850 1700
+Wire Notes Line
+	850  600  850  1700
+Wire Wire Line
+	1900 7400 1900 7450
+Wire Wire Line
+	1900 7450 2200 7450
 $EndSCHEMATC
